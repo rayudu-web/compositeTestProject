@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="7eca881a-0943-4319-bcc9-478e5036a30a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7eca881a-0943-4319-bcc9-478e5036a30afileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="DataSource" id="9e2ffd0b-03e4-42d2-aa32-0c8892b45834">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
