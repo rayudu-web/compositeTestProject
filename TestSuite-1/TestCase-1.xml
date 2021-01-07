@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="d3681dd7-97a2-4426-bf8d-3062821fbffafileName">TestCase-1</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="restrequest" name="REST Request" id="478b021e-9e3f-4250-92f3-dfbc8d742ff6">
     <con:settings/>
     <con:config service="REST Service" resourcePath="/api/users" methodName="Users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
