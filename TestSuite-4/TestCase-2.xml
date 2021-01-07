@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="7c68f2ef-26a3-4afb-a5be-e078509ac0be" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7c68f2ef-26a3-4afb-a5be-e078509ac0befileName">TestCase-2</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="4f99ed00-0e3d-4f20-9886-3a052db521bb">
+    <con:settings/>
+    <con:config service="REST Service" methodName="Users" resourcePath="/api/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="658381a5-1c91-4096-abb2-1e6587684bec" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="ad591d3e-dd62-4bcb-a4c2-059cacf5da92" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="6aa02006-7d51-4316-b888-5d42e7f68854" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters>
+          <con:entry key="page" value="2"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
