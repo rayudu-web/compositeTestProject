@@ -7,9 +7,13 @@
     <con:settings/>
     <con:config service="REST Service" methodName="Users" resourcePath="/api/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="REST Request" id="4fdcd315-1b98-44a9-9185-e77460cc31cc" mediaType="application/json">
-        <con:settings/>
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
         <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://reqres.in/</con:endpoint>
         <con:request/>
+        <con:originalUri>https://reqres.in/api/users</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="98be2086-1c48-4837-9cdd-409cbd78c458" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
@@ -29,9 +33,50 @@
         <con:parameters>
           <con:entry key="page" value="2"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request 2" id="feca1f0b-68b0-4095-b028-0e7272438f53">
+    <con:settings/>
+    <con:config service="REST Service" methodName="Method 1" resourcePath="/api/users/2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request 2" id="643c1b1c-a5e8-497e-97ba-9a0359a5045f" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://reqres.in/</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://reqres.in/api/users/2</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="301e8404-4e09-4c73-8e09-b542b2a416c6" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="d2eb6be5-13e0-4cd3-96d4-a5e56f8983b2" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
       </con:restRequest>
     </con:config>
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>

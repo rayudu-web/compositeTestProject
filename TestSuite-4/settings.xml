@@ -3,7 +3,13 @@
   <con:settings>
     <con:setting id="02a3a1b5-3bd1-4634-8cdb-d73c3322b4e5fileName">TestSuite-4</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:runType>SEQUENTIAL</con:runType>
   <con:properties/>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testSuite>

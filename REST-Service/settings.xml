@@ -4,5 +4,12 @@
     <con:setting id="c89e5ae7-03c5-4b3e-87ae-6070f97e7582fileName">REST-Service</con:setting>
   </con:settings>
   <con:definitionCache type="TEXT" rootPart=""/>
-  <con:endpoints/>
+  <con:endpoints>
+    <con:endpoint>https://reqres.in/</con:endpoint>
+  </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:interface>
