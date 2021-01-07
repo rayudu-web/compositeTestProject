@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="d3681dd7-97a2-4426-bf8d-3062821fbffa" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="7c19f919-4cdd-4c96-a318-67007d48e293" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="d3681dd7-97a2-4426-bf8d-3062821fbffafileName">TestCase-1</con:setting>
+    <con:setting id="7c19f919-4cdd-4c96-a318-67007d48e293fileName">TestCase-1</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="REST Request" id="478b021e-9e3f-4250-92f3-dfbc8d742ff6">
+  <con:testStep type="restrequest" name="REST Request" id="56b090b0-edbe-4dd6-aa45-d248d7d201bc">
     <con:settings/>
     <con:config service="REST Service" resourcePath="/api/users" methodName="Users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="REST Request" id="1b728665-93fa-417c-8bab-4b9e4327ea79" mediaType="application/json">
         <con:settings/>
         <con:request/>
-        <con:assertion type="Valid HTTP Status Codes" id="15fceb8b-bc68-4daa-8d89-fc10789745c9" name="Valid HTTP Status Codes">
+        <con:assertion type="Valid HTTP Status Codes" id="2a6a9b86-6e28-4816-b320-ddeb623a6e45" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="045f0c7f-d151-48ac-a0d2-1d5e7da1c72a" name="Response SLA">
+        <con:assertion type="Response SLA Assertion" id="5522d312-038a-4c1f-86fb-b4e7b8ab7e2f" name="Response SLA">
           <con:configuration>
             <SLA>200</SLA>
           </con:configuration>

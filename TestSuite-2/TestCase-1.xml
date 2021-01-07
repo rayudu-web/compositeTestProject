@@ -3,6 +3,34 @@
   <con:settings>
     <con:setting id="f1c06530-fc86-4754-8adf-20078410e44ffileName">TestCase-1</con:setting>
   </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="5c9d0ae3-79e4-45c7-a93c-78537614d315">
+    <con:settings/>
+    <con:config service="REST Service" methodName="Users" resourcePath="/api/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="4fdcd315-1b98-44a9-9185-e77460cc31cc" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="98be2086-1c48-4837-9cdd-409cbd78c458" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="0d41e78c-5416-4037-856f-a8f251090d44" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters>
+          <con:entry key="page" value="2"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
   <con:properties/>
   <con:reportParameters/>
 </con:testCase>
