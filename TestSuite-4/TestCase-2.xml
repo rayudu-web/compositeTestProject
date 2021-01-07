@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="7c68f2ef-26a3-4afb-a5be-e078509ac0befileName">TestCase-2</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="restrequest" name="REST Request" id="4f99ed00-0e3d-4f20-9886-3a052db521bb">
     <con:settings/>
     <con:config service="REST Service" methodName="Users" resourcePath="/api/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -28,9 +29,19 @@
         <con:parameters>
           <con:entry key="page" value="2"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>

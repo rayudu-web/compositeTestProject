@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Users" path="/api/users" id="e3df8879-93ff-4245-8125-8e27b204f82c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="Users 2" path="/api/users" id="896df9f1-80e5-4a36-b0db-e325cb62c986" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="e3df8879-93ff-4245-8125-8e27b204f82cfileName">Users</con:setting>
+    <con:setting id="896df9f1-80e5-4a36-b0db-e325cb62c986fileName">Users-2</con:setting>
   </con:settings>
   <con:parameters/>
   <con:resource name="2" path="2" id="4f1ccbc9-3b67-444d-a051-854cef8c98f5">
@@ -12,6 +13,12 @@
     <con:method name="Method 1" id="ca6d9465-a16f-4b23-9c93-bd8d85f4f6ca" method="GET">
       <con:settings/>
       <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json; charset=utf-8</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:element xmlns:ns="https://reqres.in/api/users/2">ns:Response</con:element>
+      </con:representation>
       <con:request name="Request 1" id="eb04c9e3-3d95-4591-ab3a-0048d2db5e60" mediaType="application/json">
         <con:settings/>
         <con:request/>
