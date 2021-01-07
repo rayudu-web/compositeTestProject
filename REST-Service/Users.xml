@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Users" path="/api/users" id="e3df8879-93ff-4245-8125-8e27b204f82c" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="Users" path="/api/users" id="e3df8879-93ff-4245-8125-8e27b204f82c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="e3df8879-93ff-4245-8125-8e27b204f82cfileName">Users</con:setting>
   </con:settings>
@@ -12,14 +12,15 @@
         <con:value>2</con:value>
         <con:style>QUERY</con:style>
         <con:default>2</con:default>
-        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
     </con:parameters>
     <con:request name="Request 1" id="1b728665-93fa-417c-8bab-4b9e4327ea79" mediaType="application/json">
       <con:settings/>
       <con:request/>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
