@@ -14,8 +14,10 @@
       <con:parameters/>
       <con:request name="Request 1" id="eb04c9e3-3d95-4591-ab3a-0048d2db5e60" mediaType="application/json">
         <con:settings/>
+        <con:endpoint>https://reqres.in/</con:endpoint>
         <con:request/>
         <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -43,6 +45,7 @@
     </con:representation>
     <con:request name="Request 1" id="1b728665-93fa-417c-8bab-4b9e4327ea79" mediaType="application/json">
       <con:settings/>
+      <con:endpoint>https://reqres.in/</con:endpoint>
       <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
