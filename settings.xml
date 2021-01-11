@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="1208dd86-a132-4e9e-826e-a85cb2362c3f" created="3.5.1" activeEnvironment="test" name="REST Project 1" resourceRoot="" compositeProjectFormat="1.3" updated="3.5.1" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="1208dd86-a132-4e9e-826e-a85cb2362c3f" created="3.5.1" activeEnvironment="Default environment" name="REST Project 1" resourceRoot="" compositeProjectFormat="1.3" updated="3.5.1" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="1208dd86-a132-4e9e-826e-a85cb2362c3ffileName">REST-Project-1</con:setting>
   </con:settings>
-  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
@@ -39,18 +38,6 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
-  <con:environment id="b6cb0f3f-7612-49bf-bf66-47953972a05a" name="test" index="0">
-    <con:service type="REST" name="REST Service">
-      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://reqres.in/</con:endpoint>
-    </con:service>
-    <con:databaseConnectionContainer/>
-    <con:jmsConnectionContainer/>
-  </con:environment>
   <con:authRepository/>
-  <con:environmentSpec>
-    <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
-      <con:authProfile>No Authorization</con:authProfile>
-    </con:entry>
-  </con:environmentSpec>
   <con:tags/>
 </con:soapui-project>

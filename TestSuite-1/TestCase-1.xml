@@ -3,51 +3,6 @@
   <con:settings>
     <con:setting id="d3681dd7-97a2-4426-bf8d-3062821fbffafileName">TestCase-1</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="REST Request" id="478b021e-9e3f-4250-92f3-dfbc8d742ff6">
-    <con:settings/>
-    <con:config service="REST Service" resourcePath="/api/users" methodName="Users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="REST Request" id="1b728665-93fa-417c-8bab-4b9e4327ea79" mediaType="application/json">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:endpoint>https://reqres.in/</con:endpoint>
-        <con:request/>
-        <con:originalUri>https://reqres.in/api/users</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="15fceb8b-bc68-4daa-8d89-fc10789745c9" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="045f0c7f-d151-48ac-a0d2-1d5e7da1c72a" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters>
-          <con:entry key="page" value="2"/>
-        </con:parameters>
-        <con:parameterOrder>
-          <con:entry>page</con:entry>
-        </con:parameterOrder>
-        <con:environmentSpec>
-          <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
-            <con:authProfile>Inherit From Parent</con:authProfile>
-          </con:entry>
-        </con:environmentSpec>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
   <con:properties/>
   <con:reportParameters/>
-  <con:environmentSpec>
-    <con:entry environmentId="b6cb0f3f-7612-49bf-bf66-47953972a05a">
-      <con:authProfile>Inherit From Parent</con:authProfile>
-    </con:entry>
-  </con:environmentSpec>
 </con:testCase>
